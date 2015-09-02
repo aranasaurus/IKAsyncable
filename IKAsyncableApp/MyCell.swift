@@ -27,9 +27,9 @@ class MyCell : UITableViewCell, IKAsyncable {
         switch state {
         case .InProgress:
             color = .yellowColor()
-        case .Complete(let result):
+        case .Complete:
             color = .greenColor()
-        case .Failed(_):
+        case .Failed:
             color = .redColor()
         }
         
