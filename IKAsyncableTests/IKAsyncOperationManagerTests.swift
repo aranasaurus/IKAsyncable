@@ -32,7 +32,7 @@ class IKAsyncOperationManagerTests: XCTestCase {
         XCTAssertEqual(mgr.operations.count, 0, "There should be nothing in the cache to start with")
         
         // when
-        let added = mgr.addOperationIfNeeded(path, operation: closure)
+        mgr.addOperationIfNeeded(path, operation: closure)
         
         // then
         XCTAssertEqual(mgr.operations.count, 1, "There should be 1 operation in the cache after add the operation")
