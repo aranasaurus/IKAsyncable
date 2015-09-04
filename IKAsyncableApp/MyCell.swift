@@ -38,7 +38,7 @@ class MyCell : UITableViewCell, IKAsyncable {
         case .Complete(let result):
             self.imgView.image = result as? UIImage
             color = .whiteColor()
-        case .Failed(_):
+        case .Failed:
             color = .redColor()
         }
         
